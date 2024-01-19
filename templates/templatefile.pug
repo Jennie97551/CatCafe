@@ -1,0 +1,25 @@
+doctype html 
+html 
+    head 
+        meta(charset="UTF-8")
+        block title
+        link(rel="stylesheet" href="/static/css/main.dark.css")
+        link(rel="stylesheet" href="/static/css/main.css")
+        block stylesheet
+        script(src="/static/js/main.js")
+        block scripts
+    body 
+        nav 
+            ul 
+                li 
+                    a(href="/main") Cafe Pspsps
+                li
+                    a(href="/testimonies") Testimonials
+                li
+                    a(href="/contact") Schedule a Visit
+                li
+                    a(href="/admin/contactlog") Contact Log
+                li 
+                    button(type="button" id="themeButton") Change Theme 
+        block content
+            

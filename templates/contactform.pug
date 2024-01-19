@@ -1,0 +1,47 @@
+extends templatefile.pug
+
+block title 
+    title Contact Us 
+
+block stylesheet 
+    style(type="text/css").
+        form {
+            background-color: lightskyblue;
+            border-radius: 25px;
+            width: 30vw;
+            padding: 15px;
+            margin: auto;
+        }
+
+block scripts 
+    script(src="/static/js/contact.js")
+
+block content 
+    h1 Schedule a Visit With Us! 
+    form(action="/contact" method="post")
+        p 
+            label(for="name") Name:
+            input(type="text" id="name" name="name" placeholder="Jane Doe" required)
+        p 
+            label(for="email") Email: 
+            input(input type="email" id="email" name="email" required)
+        p 
+            label(for="date") Schedule a date:
+            input(type="date" id="date" name="date" required)
+        p 
+            label(for="reason") Reason for Visit: 
+            select(id="reason" name="reason")
+                option(value="fun") just for fun
+                option(value="adopt") looking to adopt
+                option(value="idk") i have no idea
+        p 
+            label(for="subscribed") Subscribe to Our Purrfect Newsletter:
+            input(type="checkbox" id="subscribed" name="subscribed")
+        p 
+            label(for="submit") Submit: 
+            input(type="submit" id="submit" name="submit")
+        p(hidden id="umnEmails") UMN emails get a 10% discount!
+        p Cost: $
+            span(id="costCalc") 0
+
+

@@ -1,0 +1,66 @@
+extends templatefile.pug 
+
+block title 
+    title Customer Reviews 
+
+block stylesheet 
+    style(type="text/css").
+        .video{
+            text-align: center;
+            background-color: lightskyblue;
+        }
+        .reviews{
+            display: flex;
+            align-content: space-between;
+            flex-direction: row;
+            justify-content: center
+        }
+        .review{
+            border-style: double;
+            border-width: 4px;
+            border-radius: 25px;
+            border-color: rgb(13, 117, 181);
+            padding: 10px;
+            margin: 15px;
+        }
+        .column1, .column2{
+            width: 40vw;
+        }
+        .reviewer-name{
+            text-align: right;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .review-body{
+            font-style: italic;
+        }
+
+block content 
+    h1 Customer Reviews. Trust bro.
+    h2 That's a great cat right there.
+    div(class="video")
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/sQ1EXk7XUpE?si=TgnElikteCqf3JcW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+    div(class="reviews")
+        div(class="column1")
+            div(class="review")
+                p(class="review-body") The staff at Cafe Pspsps are incredibly nice, and the cats are super friendly!
+                p(class="reviewer-name") Elon Musk 
+            div(class="review")
+                p(class="review-body") I would highly recommend this place for a fun family outing!
+                p(class="reviewer-name") Steve Jobs
+            div(class="review")
+                p(class="review-body") Cats, bro.
+                p(class="reviewer-name") Mark Zuck
+        div(class="column2")
+            div(class="review")
+                p(class="review-body") Yooooooo. You need to visit Cafe Pspsps before you die.
+                p(class="reviewer-name") Jeff Bezos
+            div(class="review")
+                p(class="review-body") i hate cats. i'm a dog person. why am i here.
+                p(class="reviewer-name") Sir Andrew Witty
+            div(class="review")
+                p(class="review-body") I have no idea what's happening right now, but like fair enuf.
+                p(class="reviewer-name") You.
+                
+        
+

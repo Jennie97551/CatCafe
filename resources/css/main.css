@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+body{
+    background-color: rgb(66, 173, 249);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color: rgb(66, 173, 249);
+    text-decoration: none;
+    font-family: 'Lilita One', sans-serif;
+
+}
+
+nav ul{
+    background-color: lightskyblue;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li{
+    background-color: white;
+    border-radius: 25px;
+    height: 50%;
+    padding: 10px;
+    
+}
+
+nav ul li:hover{
+    background-color: rgb(13, 117, 181);
+    box-shadow: 10px 5px 5px rgb(66, 173, 249);
+}
+
+h1, h2{
+    font-family: 'Lilita One', sans-serif;
+    text-align: center;
+}

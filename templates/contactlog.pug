@@ -1,0 +1,44 @@
+extends templatefile.pug
+
+block title 
+    title Contact Log
+
+block stylesheet 
+    link(rel="stylesheet" href="/static/css/contactlog.css")
+
+block scripts 
+    script(src="/static/js/table.js")
+
+block content 
+    form
+        p Set Sale
+        label(for="saleInput") Sale Text:  
+        input(type="text" name="saleInput" id="saleInput" placeholder="sale message")
+        br
+        br
+        button(type="button" id="setSale") Set Sale
+        button(type="button" id="endSale") End Sale
+    h1 My Contacts and Appointments
+    table 
+        tr
+            th Name: 
+            th Email: 
+            th Date: 
+            th Reason: 
+            th Subscribed: 
+            th Delete
+        each contact in contacts 
+            tr 
+                td(hidden)= contact.id 
+                td= contact.name
+                td
+                    a(href="mailto:" + contact.email)= contact.email
+                td
+                    span= contact.date 
+                    br
+                    span(class="time") time
+                td= contact.reason 
+                td= contact.subscribed
+                td
+                    button(type="button" class="delete" id="delete" + contact.id) Bye-bye
+

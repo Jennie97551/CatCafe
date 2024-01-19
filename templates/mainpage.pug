@@ -1,0 +1,33 @@
+extends templatefile.pug
+
+block title
+    title Cafe Pspsps
+
+block stylesheet 
+    link(rel="stylesheet" href="/static/css/mainpage.css")
+
+block scripts 
+    script(src="/static/js/mainpage.js")
+
+block content 
+    div(id="saleDiv")
+            span(id="saleBanner" style="display:none")
+    h1 Cafe Pspsps 
+    h2 Because therapy is expensive, but cats aren't.
+    div(class="image")
+        img(src="/static/images/cat.jpeg" alt="Cafe Pspsps")
+    div(class="text")
+        p 
+            strong Welcome to Cafe Pspsps! 
+            | We're a locally owned cat cafe located in
+            em Shoreview, Minnesota
+            | that has been in business since 1654. That's right, before the US even was a thing!
+        p You're always welcome to come pet the cats at Cafe Pspsps. As we all know, therapy is pretty expensive these days, so if you need something to make those happy chemicals flow, consider visiting us! We offer:
+        ol 
+            li Cats. Lots of cats.
+            li Cafe drinks 
+            li Treats for cats 
+            li More Cats 
+
+
+

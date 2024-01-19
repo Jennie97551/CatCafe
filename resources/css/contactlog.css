@@ -1,0 +1,32 @@
+table{
+    margin: auto;
+    width: 80vw;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(13, 117, 181);
+}
+
+table, th, td{
+    border: 3px solid;
+    border-color: white;
+    padding: 5px;
+}
+
+td a{
+    color: white;
+}
+
+td a:hover{
+    background-color: lightskyblue;
+}
+
+form{
+    background-color: lightskyblue;
+    border-radius: 25px;
+    width: 30vw;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+}

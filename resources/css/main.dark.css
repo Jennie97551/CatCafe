@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.dark{
+    background-color: rgb(4, 24, 38);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.dark nav a{
+    color: rgb(4, 24, 38);
+    text-decoration: none;
+    font-family: 'Lilita One', sans-serif;
+
+}
+
+.dark nav ul{
+    background-color: rgb(14, 84, 128);
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+}
+
+.dark nav ul li{
+    background-color: white;
+    border-radius: 25px;
+    height: 50%;
+    padding: 10px;
+    
+}
+
+.dark nav ul li:hover{
+    background-color: rgb(13, 117, 181);
+    box-shadow: 10px 5px 5px rgb(4, 24, 38);
+}
+
+.dark h1, h2{
+    font-family: 'Lilita One', sans-serif;
+    text-align: center;
+}
+
+.dark .video{
+    background-color: rgb(34, 74, 98);
+}
+
+.dark form{
+    background-color: rgb(34, 74, 98);
+}

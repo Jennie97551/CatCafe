@@ -1,0 +1,26 @@
+strong, em{
+    color: rgb(13, 117, 181);
+  }
+  img{
+    width: 75vw;
+  }
+  .image{
+    text-align: center;
+    margin: 15px;
+  }
+  .text{
+    border-radius: 25px;
+    width: 50vw;
+    background-color: lightskyblue;
+    margin: auto;
+    padding: 10px;
+  }
+  #saleBanner{
+    background-color: rgb(163, 129, 237);
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #saleDiv{
+    text-align: center;
+  }
